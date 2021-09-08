@@ -1,72 +1,27 @@
-//import java.util.Scanner;
-//
-//public class Test {
-//    public static void main(String[] args)
-//    {
-//      System.out.println("Hello, World!");
-//      System.out.println("Hello, Draco!");
-//
-//        System.out.print("Hello,");
-//        System.out.println(" Salvador! ");
-//
-//        System.out.println(" --New examples--- ");
-//
-//
-//
-////        String name ="salvador";
-////        System.out.printf("hello there %s. Nice to see you.\n", name);
-////
-////        String greeting = "Salutations";
-////        String name2 = "codeup";
-////        System.out.printf("%s, %s!", greeting, name2);
-//
-//        Scanner scanner = new Scanner(System.in);
-//
-//        System.out.print("enter something HERE :");
-////        String userInput = scanner.next();
-//        String userInput = scanner.nextLine();
-//
-//        System.out.println("you entered : --> \"" + userInput + "\' <--");
-//
-//
-//
-//
-//    }
-//
-//
-//
-//
-//}
-//
+public class SyntaxLecture {
 
 
+    public static void main(String[] args) {
 
-// ---- jsutins lecture notes
 
-
-//
-//public class SyntaxLecture {
-//
-//
-//    public static void main(String[] args) {
-//
-//
-//        // ================== STATEMENTS (s-3)
+        // ================== STATEMENTS (s-3)
 
         // Statements may be...
         // Declarations
-//             int x;
+//                 int x;
 
         // Assignment expressions
-//               x = 3;
+//                 x = 3;
 
         // Any use of ++ or --
-//            --x;
+//                 x++;
+//                 --x;
 
         // Method invocations
-//               Math.random();
+//                 Math.random();
 
         // Object creation expressions
+//                 SomeObject = new SomeObject();
 
         // ================== COMMENTS (s-4)
 
@@ -211,7 +166,7 @@
 //                System.out.println(num4);
 
 
-//
-//    }
-//
-//}
+
+    }
+
+}
