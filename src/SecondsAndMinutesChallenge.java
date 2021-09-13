@@ -2,16 +2,19 @@ import com.sun.jdi.VMMismatchException;
 
 public class SecondsAndMinutesChallenge {
 
+    private static final String INVALID_VALUE_MESSAGE="Invalid Value";//constant value so return on below            methiods doesn thave to have strin of "invliad value".
 
     public static void main(String[] args) {
         System.out.println(getDurationString(65,45));
         System.out.println(getDurationString(3945));
+        System.out.println(getDurationString(500,59));
+        System.out.println(getDurationString(-41));
 
     }
 
     private static String getDurationString(long minutes,long seconds){
         if((minutes < 0) || (seconds <0)||(seconds > 59) ){
-            return "Invalid Value";
+            return INVALID_VALUE_MESSAGE;
         }
         long hours = minutes / 60;
         long remainingMinuttes = minutes %60;
@@ -37,15 +40,15 @@ public class SecondsAndMinutesChallenge {
     private static String getDurationString(long seconds){
 
         if(seconds < 0){
-            return "invalid";
+            return INVALID_VALUE_MESSAGE;
         }
 
         long minutes =  seconds /60;
         long remainingSeconds = seconds %60;
 
-//acceptble as well , but below it is put into one line
-//        String x  = getDurationString(minutes,seconds);
-//        return x;
+        //acceptble as well , but below it is put into one line
+        //        String x  = getDurationString(minutes,seconds);
+        //        return x;
         return getDurationString(minutes,remainingSeconds);
 
 

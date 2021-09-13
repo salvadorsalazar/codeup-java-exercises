@@ -1,9 +1,50 @@
+import org.w3c.dom.ls.LSOutput;
+
 //
 //
 //
-//}
 //
-//    public class sandbox {
+//
+    public class sandbox {
+// ------   FRIDAY SEPTEMBER 10TH---------------
+
+    public class Fighter{
+        public String name;
+        public int hitPoints;
+        public int maxDamage;
+
+        public void printStats(){
+            System.out.println(name + " has " + hitPoints + " hit points and can do "+ maxDamage + " damage");
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //-------------september 6-9th --------------
+    //-------------------------------------------
 //            public static void main(String[] args) {
 //
 //
@@ -236,4 +277,4 @@
 //
 //
 //            }
-//    }
+    }
