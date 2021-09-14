@@ -1,7 +1,7 @@
 
 public class ServerNameGenerator {
 
-    public static String randomStringFromArrayReturner(String[] inputStringArray){
+    public static String serverGenerator(String[] inputStringArray){
         return inputStringArray[(int)(Math.floor(Math.random() * inputStringArray.length))];
     }
 
@@ -9,7 +9,7 @@ public class ServerNameGenerator {
         String[] nouns = {"airport", "ambulance", "helicopter", "planet", "piano", "hamburger", "guitarr", "hair", "animal","eggplant"};
         String[] adjectives = {"annoying", "amused", "alert", "obnoxious", "blue","bored","embarassed", "fragile", "foolish", "fantastic"};
 
-        System.out.println("Here is your server name: \n" + randomStringFromArrayReturner(adjectives) + " " + randomStringFromArrayReturner(nouns));
+        System.out.println("Here is your server name: \n" + serverGenerator(adjectives) + " " + serverGenerator(nouns));
 
     }
 }
