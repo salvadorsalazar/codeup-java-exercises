@@ -32,6 +32,43 @@ public boolean yesNo(String input){
 
 }
 
+    public int getInt(int min, int max){
+        System.out.println("Enter an integer between " + min + " and " + max + ".");
+        int userInput = Integer.parseInt(scanner.nextLine());
+        if (userInput > min && userInput < max){
+            return userInput;
+        } else {
+            return this.getInt(min, max);
+        }
+    }
+
+    public int getInt(){
+        System.out.println("Enter an integer.");
+        int userInput = Integer.parseInt(scanner.nextLine());
+        return userInput;
+    }
+
+    public double getDouble(double min, double max){
+        System.out.println("Enter a double between " + min + " and " + max + ".");
+        double userInput = Double.parseDouble(scanner.nextLine());
+        if (userInput >= min && userInput <= max){
+            return userInput;
+        } else {
+            return this.getDouble(min, max);
+        }
+    }
+
+    public double getDouble(){
+        System.out.println("Enter a double.");
+        double userInput = Double.parseDouble(scanner.nextLine());
+        return userInput;
+    }
+
+
+
+
+
+
 
 
 }
