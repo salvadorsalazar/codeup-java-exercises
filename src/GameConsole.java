@@ -1,4 +1,4 @@
-import interfacesAbstractClassesLecture.Transferable;
-
-public class GameConsole implements Transferable {
-}
+//import interfacesAbstractClassesLecture.Transferable;
+//
+//public class GameConsole implements Transferable {
+//}

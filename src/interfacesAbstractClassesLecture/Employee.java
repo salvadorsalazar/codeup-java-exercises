@@ -1,6 +1,6 @@
 package interfacesAbstractClassesLecture;
 
-abstract public class Employee {
+abstract public class Employee implements Manageable {
 
     public abstract String doWork();
 
@@ -16,8 +16,5 @@ abstract public class Employee {
     }
 
 
-
-
-
-
+    public abstract void syncUp();
 }
