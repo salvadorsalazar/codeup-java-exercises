@@ -1,8 +1,8 @@
 
 public class ServerNameGenerator {
 
-    public static String serverGenerator(String[] inputStringArray){
-        return inputStringArray[(int)(Math.floor(Math.random() * inputStringArray.length))];
+    public static String serverGenerator(String[] inputArray){
+        return inputArray[(int)(Math.floor(Math.random() * inputArray.length))];
     }
 
     public static void main(String[] args) {
