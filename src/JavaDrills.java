@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class JavaDrills {
 
 //
@@ -8,6 +10,8 @@ public class JavaDrills {
         flipOuterCase("caT");// Cat
         flipOuterCase("cAt");// CAT
 
+//float n[] = {10,2,3};
+        System.out.println(returnTotalDifference([10, 2, 3],[1, 2, 3]));
 //////
 //        System.out.println(flipOuterCase(“cat”));
 //        System.out.println(flipOuterCase(“CaT”));
@@ -33,5 +37,19 @@ public class JavaDrills {
 
         }  String changedCase= new String(ch);
         System.out.println(changedCase);
+    }
+
+
+    public static int returnTotalDifference(int list1[],int list2[]){
+        int sum = 0;
+        int sum2=0;
+        for(int num:list1){
+            sum += num;
+        }
+        for(int num:list2){
+            sum2 += num;
+        }
+        return sum-sum2;
+
     }
 }
