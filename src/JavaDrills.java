@@ -11,12 +11,15 @@ public class JavaDrills {
         flipOuterCase("cAt");// CAT
 
 //float n[] = {10,2,3};
-        System.out.println(returnTotalDifference([10, 2, 3],[1, 2, 3]));
+//        System.out.println(returnTotalDifference([10, 2, 3],[1, 2, 3]));
 //////
 //        System.out.println(flipOuterCase(“cat”));
 //        System.out.println(flipOuterCase(“CaT”));
 //        System.out.println(flipOuterCase(“caT”));
 //        System.out.println(flipOuterCase(“cAt”));
+
+
+        System.out.println(flipInnerCase("CAAAaaaaAAT"));
     }
     public static void flipOuterCase(String str){
 
@@ -52,4 +55,22 @@ public class JavaDrills {
         return sum-sum2;
 
     }
+
+//STILL WORKING ON ,
+
+    public static String flipInnerCase(String str){
+        StringBuilder newString = new StringBuilder();
+        for (int i = 0; i < str.length(); i++){
+            char c = str.charAt(i);
+            if (i == 0 || i == str.length() - 1){
+                newString.append(c);
+            } else {
+                if (Character.isUpperCase(c)){
+                    newString.append(Character.toString(c).toLowerCase());
+                } else newString.append(Character.toString(c).toUpperCase());
+            }
+        }
+        return newString.toString();
+    }
+
 }
