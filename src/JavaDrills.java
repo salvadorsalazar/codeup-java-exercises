@@ -11,7 +11,9 @@ public class JavaDrills {
         flipOuterCase("cAt");// CAT
 
 //float n[] = {10,2,3};
-//        System.out.println(returnTotalDifference([10, 2, 3],[1, 2, 3]));
+        System.out.println(returnTotalDifference(new int[]{10, 2, 3}, new int[]{1, 2, 3}));
+
+        System.out.println(returnTotalDifference(new int[]{100,250},new int[]{250}));
 //////
 //        System.out.println(flipOuterCase(“cat”));
 //        System.out.println(flipOuterCase(“CaT”));
